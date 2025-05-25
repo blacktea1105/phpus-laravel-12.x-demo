@@ -3,5 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    $phpversion = phpversion();
+    
+    $htmlBody = <<<EOT
+    <h1>Hi there, PHPUS!</h1>
+
+    <p>Current PHP version: $phpversion</p>
+    EOT;
+
+    return $htmlBody;
 });
