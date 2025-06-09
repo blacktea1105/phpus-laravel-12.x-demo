@@ -7,6 +7,7 @@ Route::get('/', function () {
     
     $htmlBody = <<<EOT
     <h1>Hi there, PHPUS!</h1>
+    <h2>Laravel Framework</h2>
 
     <p>Current PHP version: $phpversion</p>
     EOT;
